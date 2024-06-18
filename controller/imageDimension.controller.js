@@ -2,7 +2,7 @@ const imageDimensionModel = require("../models/imageDimension.model")
 const addImageDimension = async (req, res) => {
   try{
     let addImageDimension = new imageDimensionModel({
-      imageThumbnail:req.body.imageDimensionModel,
+      imageThumbnail:req.body.imageThumbnail,
       width:req.body.width,
       height:req.body.height,
       topLeft:req.body.topLeft,
